@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>FactionExtender</groupId>
 	<artifactId>FactionExtender</artifactId>
-	<version>1.2-SNAPSHOT</version>
+	<version>1.2</version>
 	<packaging>jar</packaging>
 	<name>Faction Extender API</name>
 	<description>API to reference when building extensions for Faction.</description>
@@ -15,11 +15,11 @@
 		</license>
 	</licenses>
 	<scm>
-		<url>https://github.com/factionsecurity/faction-extender.git</url>
-		<connection>scm:git:https://github.com/factionsecurity/faction-extender.git</connection>
+		<url>https://github.com/factionsecurity/FactionExtender.git</url>
+		<connection>scm:git:https://github.com/factionsecurity/FactionExtender.git</connection>
 		<developerConnection>
-			scm:git:https://github.com/factionsecurity/faction-extender.git</developerConnection>
-		<tag>1.1.0</tag>
+			scm:git:https://github.com/factionsecurity/FactionExtender.git</developerConnection>
+		<tag>1.2</tag>
 	</scm>
 	<properties>
 		<aws.java.sdk.version>2.18.16</aws.java.sdk.version>
