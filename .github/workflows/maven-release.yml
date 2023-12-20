@@ -21,5 +21,5 @@ jobs:
         with:
           release-branch-name: "main"
           git-release-bot-name: "release-bot"
-          access-token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
+          access-token: ${{ secrets.MY_TOKEN }}
           maven-args: "-Dmaven.javadoc.skip=true -Dmaven.test.skipTests=true -Dmaven.test.skip=true -Ddockerfile.skip -DdockerCompose.skip -Dusername=summit"
