@@ -19,4 +19,7 @@ jobs:
       - name: Release
         uses: qcastel/github-actions-maven-release@master
         with:
+          release-branch-name: "main"
+          git-release-bot-name: "release-bot"
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          maven-args: "-Darguments=-Dmaven.javadoc.skip=true -Dmaven.test.skipTests=true -Dmaven.test.skip=true" -Dusername=summit"
