@@ -17,5 +17,6 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
       - name: Run Maven Release Command
-          run: mvn --batch-mode release:clean release:prepare -Darguments="-Dmaven.javadoc.skip=true -Dmaven.test.skipTests=true -Dmaven.test.skip=true" -Dusername=summitt
+        run: mvn --batch-mode release:clean release:prepare -Darguments="-Dmaven.javadoc.skip=true -Dmaven.test.skipTests=true -Dmaven.test.skip=true" -Dusername=summitt
+        with:
           access-token: ${{ secrets.MY_TOKEN }}
