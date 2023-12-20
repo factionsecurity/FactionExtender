@@ -18,5 +18,5 @@ jobs:
           distribution: 'temurin'
       - name: Release
         uses: qcastel/github-actions-maven-release@master
-          with:
-            ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
