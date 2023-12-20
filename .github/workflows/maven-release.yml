@@ -16,8 +16,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
-      - name: Create Release
-        run: mvn --batch-mode release:clean release:prepare -Darguments="-Dmaven.javadoc.skip=true -Dmaven.test.skipTests=true -Dmaven.test.skip=true" -Dusername=summitt
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Release
+        uses: qcastel/github-actions-maven-release@master
+          with:
+            ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
