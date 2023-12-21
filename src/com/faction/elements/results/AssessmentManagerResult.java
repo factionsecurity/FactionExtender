@@ -1,8 +1,10 @@
-package com.faction.extender;
+package com.faction.elements.results;
 
-import com.faction.elements.Vulnerability;
-import com.faction.elements.Assessment;
 import java.util.List;
+
+import com.faction.elements.Assessment;
+import com.faction.elements.Vulnerability;
+
 import java.util.ArrayList;
 
 public class AssessmentManagerResult {

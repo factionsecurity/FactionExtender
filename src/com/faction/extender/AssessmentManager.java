@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.faction.elements.Assessment;
 import com.faction.elements.Vulnerability;
-import com.faction.extender.AssessmentManagerResult;
+import com.faction.elements.results.AssessmentManagerResult;
 
 
 public interface AssessmentManager {

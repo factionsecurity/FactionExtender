@@ -1,4 +1,4 @@
-package com.faction.extender;
+package com.faction.elements.results;
 
 import java.util.HashMap;
 

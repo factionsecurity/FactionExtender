@@ -1,6 +1,6 @@
 package com.faction.extender;
 
-
+import com.faction.elements.results.InventoryResult;
 
 public interface ApplicationInventory {
 	
