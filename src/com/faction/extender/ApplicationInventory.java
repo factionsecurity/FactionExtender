@@ -15,9 +15,9 @@ public interface ApplicationInventory {
 	 * web application. For example when scheduling or uploading 
 	 * assessments.
 	 * 
-	 * @param id is a unique identifier for the application
-	 * @param Name is the name of the application
-	 * @return InvetoryResult[] is an array of Applications
+	 * @param id 	is a unique identifier for the application
+	 * @param Name 	is the name of the application
+	 * @return InvetoryResult[]	is an array of Applications
 	 */
 	public InventoryResult[]  search(String id, String Name);
 

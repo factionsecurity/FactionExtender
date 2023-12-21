@@ -29,19 +29,19 @@ public class InventoryResult {
 	}
 
 	/**
-	 * @param applicationId is the ID of the application. This is not the Faction Database ID
+	 * @param applicationId 	is the ID of the application. This is not the Faction Database ID
 	 */
 	public void setApplicationId(String applicationId) {
 		ApplicationId = applicationId;
 	}
 	/**
-	 * @param applicationName Is the Name of the Application
+	 * @param applicationName 	Is the Name of the Application
 	 */
 	public void setApplicationName(String applicationName) {
 		ApplicationName = applicationName;
 	}
 	/**
-	 * @param customFields key value pairs where the key must match to a custom variable name in Faction
+	 * @param customFields 		key value pairs where the key must match to a custom variable name in Faction
 	 */
 	public void setCustomFields(HashMap<String, String> customFields) {
 		CustomFields = customFields;
@@ -53,7 +53,7 @@ public class InventoryResult {
 		return DistrobutionList;
 	}
 	/**
-	 * @param distrobutionList is a string of email addresses separated by a ';'
+	 * @param distrobutionList 	is a string of email addresses separated by a ';'
 	 */
 	public void setDistrobutionList(String distrobutionList) {
 		DistrobutionList = distrobutionList;
