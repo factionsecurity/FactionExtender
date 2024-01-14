@@ -1,10 +1,12 @@
 package com.faction.extender;
 
+import java.util.HashMap;
+
 import com.faction.elements.User;
 import com.faction.elements.Verification;
 import com.faction.elements.Vulnerability;
 
-public interface VerificationManager {
+public interface VerificationManager extends BaseInterface {
 	static public enum Operation { Cancel, PASS,FAIL,Assigned};
 	
 	/**

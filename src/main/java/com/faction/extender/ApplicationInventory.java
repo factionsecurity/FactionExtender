@@ -1,8 +1,10 @@
 package com.faction.extender;
 
+import java.util.HashMap;
+
 import com.faction.elements.results.InventoryResult;
 
-public interface ApplicationInventory {
+public interface ApplicationInventory extends BaseInterface {
 	
 	/**
 	 * This is an interface for the Faction API that allows
