@@ -5,7 +5,7 @@
 	<version>2.2</version>
 	<packaging>jar</packaging>
 	<name>Faction Extender API</name>
-	<description>API to reference when building extensions for Faction.</description>
+	<description>API to interfaces for building extensions for Faction.</description>
 	<url>https://www.factionsecurity.com</url>
 	<licenses>
 		<license>
@@ -15,10 +15,10 @@
 		</license>
 	</licenses>
 	<scm>
-		<url>git@github.com:factionsecurity/FactionExtender.git</url>
-		<connection>scm:git:git@github.com:factionsecurity/FactionExtender.git</connection>
+		<url>https://github.com/factionsecurity/FactionExtender.git</url>
+		<connection>scm:git:https://github.com/factionsecurity/FactionExtender.git</connection>
 		<developerConnection>
-			scm:git:git@github.com:factionsecurity/FactionExtender.git</developerConnection>
+			scm:git:https://github.com/factionsecurity/FactionExtender.git</developerConnection>
 		<tag>2.2</tag>
 	</scm>
 	<properties>
