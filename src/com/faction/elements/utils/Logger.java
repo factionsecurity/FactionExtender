@@ -1,44 +1,25 @@
 package com.faction.elements.utils;
 
-import java.io.PrintWriter;
-import java.io.StringWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.faction.elements.utils.Log.LEVEL;
 
 public class Logger {
 	
-	public enum LEVEL { INFO, WARNING, ERROR, DEBUG };
-	private LEVEL level;
-	private String message;
-	private String stackTrace;
+	List<Log> logs = new ArrayList<Log>();
 	
-	public Logger(LEVEL level, Exception exception) {
-		this.level = level;
-		this.message = exception.getMessage();
-		StringWriter sw = new StringWriter();
-		PrintWriter pw = new PrintWriter(sw);
-		exception.printStackTrace(pw);
-		this.stackTrace = sw.toString();
+	public void addLog(LEVEL level, Exception exception) {
+		logs.add(new Log(level, exception));
+	}
+	public void addLog(LEVEL level, String message) {
+		logs.add(new Log(level, message));
+	}
+	public List<Log> getLogs() {
+		logs.sort((l1,l2) -> l1.getTimeStamp().compareTo(l2.getTimeStamp()));
+		return logs;
 		
 	}
-	public LEVEL getLevel() {
-		return level;
-	}
-	public void setLevel(LEVEL level) {
-		this.level = level;
-	}
-	public String getMessage() {
-		return message;
-	}
-	public void setMessage(String message) {
-		this.message = message;
-	}
-	public String getStackTrace() {
-		return this.stackTrace;
-	}
-	
-	
-	
-	
-	
 	
 	
 

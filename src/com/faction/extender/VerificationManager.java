@@ -1,5 +1,7 @@
 package com.faction.extender;
 
+import java.util.HashMap;
+
 import com.faction.elements.User;
 import com.faction.elements.Verification;
 import com.faction.elements.Vulnerability;
@@ -15,7 +17,7 @@ public interface VerificationManager {
 	 * @return             		All Operations return the updated vulnerability. If return value is null then 
 	 *                     		Faction will not update the internal database.
 	 */
-	public Vulnerability verificationChange(User changer, Vulnerability vulnerability, Verification verification, Operation Operation);
+	public Vulnerability verificationChange(User changer, Vulnerability vulnerability, Verification verification, Operation Operation, HashMap<String,String> configs);
 	
 	
 }

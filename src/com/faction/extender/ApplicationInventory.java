@@ -1,5 +1,7 @@
 package com.faction.extender;
 
+import java.util.HashMap;
+
 import com.faction.elements.results.InventoryResult;
 
 public interface ApplicationInventory {
@@ -19,6 +21,6 @@ public interface ApplicationInventory {
 	 * @param Name 	is the name of the application
 	 * @return InvetoryResult[]	is an array of Applications
 	 */
-	public InventoryResult[]  search(String id, String Name);
+	public InventoryResult[]  search(String id, String Name, HashMap<String,String> configs);
 
 }
