@@ -10,7 +10,7 @@ import java.util.List;
 public class BaseExtension {
 	
 	private Logger logger;
-	private HashMap<String,String> configs;
+	private HashMap<String,String> configs = new HashMap<>();
 	
 	public BaseExtension() {
 		logger = new Logger();
@@ -25,7 +25,7 @@ public class BaseExtension {
 	}
 	
 	public HashMap<String,String> getConfigs(){
-		return this.getConfigs();
+		return this.configs;
 	}
 	
 	public void setConfigs(HashMap<String,String>configs) {

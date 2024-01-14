@@ -8,10 +8,9 @@ import com.faction.elements.Assessment;
 import com.faction.elements.Vulnerability;
 import com.faction.elements.results.AssessmentManagerResult;
 import com.faction.elements.utils.Log;
-import com.faction.elements.BaseExtension;
 
 
-public interface AssessmentManager{
+public interface AssessmentManager extends BaseInterface{
 	static public enum Operation { Create, Update, Delete, 
 		Finalize, PeerReviewCreated, PeerReviewCompleted,
 		PeerReviewAccepted};
@@ -26,9 +25,7 @@ public interface AssessmentManager{
 	 * 					null if the Operation is Create. 
 	 * @param Operation	is Create Update or Delete as defined by the Operation Static variable 
 	 */
-	public AssessmentManagerResult assessmentChange(Assessment asmt, List<Vulnerability> vulns, Operation Operation, HashMap<String,String> configs);
-	
-	
+	public AssessmentManagerResult assessmentChange(Assessment asmt, List<Vulnerability> vulns, Operation Operation);
 	
 
 

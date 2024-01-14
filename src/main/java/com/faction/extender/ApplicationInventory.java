@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 import com.faction.elements.results.InventoryResult;
 
-public interface ApplicationInventory {
+public interface ApplicationInventory extends BaseInterface {
 	
 	/**
 	 * This is an interface for the Faction API that allows
@@ -21,6 +21,6 @@ public interface ApplicationInventory {
 	 * @param Name 	is the name of the application
 	 * @return InvetoryResult[]	is an array of Applications
 	 */
-	public InventoryResult[]  search(String id, String Name, HashMap<String,String> configs);
+	public InventoryResult[]  search(String id, String Name);
 
 }
