@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>FactionSecurity</groupId>
 	<artifactId>faction-extender</artifactId>
-	<version>2.2-SNAPSHOT</version>
+	<version>2.2</version>
 	<packaging>jar</packaging>
 	<name>Faction Extender API</name>
 	<description>API to interfaces for building extensions for Faction.</description>
