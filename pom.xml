@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>FactionSecurity</groupId>
 	<artifactId>faction-extender</artifactId>
-	<version>2.2-SNAPSHOT</version>
+	<version>2.2</version>
 	<packaging>jar</packaging>
 	<name>Faction Extender API</name>
 	<description>API to reference when building extensions for Faction.</description>
@@ -19,7 +19,7 @@
 		<connection>scm:git:https://github.com/factionsecurity/FactionExtender.git</connection>
 		<developerConnection>
 			scm:git:https://github.com/factionsecurity/FactionExtender.git</developerConnection>
-		<tag>1.1.0</tag>
+		<tag>2.2</tag>
 	</scm>
 	<properties>
 		<aws.java.sdk.version>2.18.16</aws.java.sdk.version>
@@ -34,7 +34,8 @@
 		</repository>
 	</distributionManagement>
 	<build>
-		<sourceDirectory>src</sourceDirectory>
+		<sourceDirectory>src/main/java</sourceDirectory>
+	    <testSourceDirectory>src/test/java</testSourceDirectory>	
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -60,14 +61,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>5.2.0</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-runner</artifactId>
-			<version>1.2.0</version>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.10.1</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
