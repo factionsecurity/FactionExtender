@@ -4,8 +4,7 @@ This Java Library allows you to write extensions for FuseSoft Faction. Once a mo
 
 Tutorial can be found here:
 
-https://www.fusesoftsecurity.com/manual/faction-extension-api/
-
+https://docs.factionsecurity.com
 ### To Build a Faction extension you need to follow these steps:
 1. Update your `~/.m2/settings.xml` file to include the following:
    _this will allow `maven` to have access to this git bug repo_
