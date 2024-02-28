@@ -12,7 +12,7 @@ import com.faction.elements.utils.Log;
 
 public interface AssessmentManager extends BaseInterface{
 	static public enum Operation { Create, Update, Delete, 
-		Finalize, PeerReviewCreated, PeerReviewCompleted,
+		Finalize, ReportCreate, PeerReviewCreated, PeerReviewCompleted,
 		PeerReviewAccepted};
 		
 	
