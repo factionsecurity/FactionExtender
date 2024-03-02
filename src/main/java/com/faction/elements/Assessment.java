@@ -8,6 +8,9 @@ import java.util.UUID;
 
 import com.faction.elements.User;
 
+/**
+ * The Assessment Class is used to store all elements of a Faction Assessment
+ */
 public class Assessment {
 
 	private String summary;

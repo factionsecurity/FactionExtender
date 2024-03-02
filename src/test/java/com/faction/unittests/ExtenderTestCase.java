@@ -76,6 +76,7 @@ public class ExtenderTestCase {
 			result.setVulnerabilities(vulns);
 			return result;
 		}
+
 	}
 	
 
