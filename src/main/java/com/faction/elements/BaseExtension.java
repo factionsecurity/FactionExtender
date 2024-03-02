@@ -7,6 +7,9 @@ import java.util.HashMap;
 import java.util.List;
 
 
+/**
+ * The Base Class is used to get logs and configs
+ */
 public class BaseExtension {
 	
 	private Logger logger;

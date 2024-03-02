@@ -1,8 +1,10 @@
 package com.faction.elements;
 
 
-
-public class Campaign extends com.faction.interfaces._Campaign{
+/**
+ * Campaign Class used to get the assessment campaign
+ */
+public class Campaign{
 	
 
 	private Long id;

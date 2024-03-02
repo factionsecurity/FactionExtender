@@ -1,7 +1,9 @@
 package com.faction.elements;
 
 
-
+/**
+ * Class to represent faction custom fields
+ */
 public class CustomField {
 	
 

@@ -5,62 +5,83 @@ import java.util.HashMap;
 public class InventoryResult {
 	private String ApplicationId;
 	private String ApplicationName;
-	private String	DistrobutionList;
-	private HashMap<String,String> CustomFields = new HashMap<String,String>();
-	
+	private String DistributionList;
+	private HashMap<String, String> CustomFields = new HashMap<String, String>();
+
 	/**
+	 * Gets the current application id
+	 * 
 	 * @return Returns the Application Id
 	 */
 	public String getApplicationId() {
 		return ApplicationId;
 	}
+
 	/**
+	 * Gets the current application name
+	 * 
 	 * @return Returns the Application Name
 	 */
 	public String getApplicationName() {
 		return ApplicationName;
 	}
+
 	/**
-	 * @return Returns the a key value pair of custom fields. 
-	 * The key must be an exact match to the variable name in Faction
+	 * Get all custom fields assigned to this assessment
+	 * 
+	 * @return Returns the a key value pair of custom fields. The key must be an
+	 *         exact match to the variable name in Faction
 	 */
 	public HashMap<String, String> getCustomFields() {
 		return CustomFields;
 	}
 
 	/**
-	 * @param applicationId 	is the ID of the application. This is not the Faction Database ID
+	 * Update the Application Id
+	 * 
+	 * @param applicationId is the ID of the application. This is not the Faction
+	 *                      Database ID
 	 */
 	public void setApplicationId(String applicationId) {
 		ApplicationId = applicationId;
 	}
+
 	/**
-	 * @param applicationName 	Is the Name of the Application
+	 * Update the applicaiton name
+	 * 
+	 * @param applicationName Is the Name of the Application
 	 */
 	public void setApplicationName(String applicationName) {
 		ApplicationName = applicationName;
 	}
+
 	/**
-	 * @param customFields 		key value pairs where the key must match to a custom variable name in Faction
+	 * Update custom fields
+	 * 
+	 * @param customFields key value pairs where the key must match to a custom
+	 *                     variable name in Faction
 	 */
 	public void setCustomFields(HashMap<String, String> customFields) {
 		CustomFields = customFields;
 	}
+
 	/**
-	 * return a distribution list the is a string of email addresses separated by a ';'
+	 * Get the email distribution list
+	 * 
+	 * @return a distribution list the is a string of email addresses separated by a
+	 * ';'
 	 */
-	public String getDistrobutionList() {
-		return DistrobutionList;
+	public String getDistributionList() {
+		return DistributionList;
 	}
+
 	/**
-	 * @param distrobutionList 	is a string of email addresses separated by a ';'
+	 * Set an updated distribution list
+	 * 
+	 * @param distributionList is a string of email addresses separated by a ';'
 	 */
-	public void setDistrobutionList(String distrobutionList) {
-		DistrobutionList = distrobutionList;
+	public void setDistributionList(String distributionList) {
+		DistributionList = distributionList;
 	}
-	
-	
-	
-	
 
 }

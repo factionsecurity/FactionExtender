@@ -3,7 +3,9 @@ package com.faction.elements;
 import java.util.Date;
 
 
-
+/**
+ * Class to represent a faction user
+ */
 public class User {
 	
 	private String fname;

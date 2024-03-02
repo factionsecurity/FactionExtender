@@ -11,21 +11,26 @@ import com.faction.elements.utils.Log;
 
 
 public interface AssessmentManager extends BaseInterface{
+	/**
+	 * Operation This is a static list of events that can be used to control what happens when the event fires.
+	 */
 	static public enum Operation { Create, Update, Delete, 
 		Finalize, PeerReviewCreated, PeerReviewCompleted,
 		PeerReviewAccepted};
 		
 	
 	/**
-	 * This function allows you to update other interfaces when the command is run. This can also up
+	 * assessmentChange is fired when any of the Operation events are fired. 
 	 * 
 	 * 
-	 * @param asmt 		is the Current assessment
+	 * @param assessment 		is the Current assessment
 	 * @param vulns 	is the list of vulnerabilities that is related to this assessment. Will be 
 	 * 					null if the Operation is Create. 
-	 * @param Operation	is Create Update or Delete as defined by the Operation Static variable 
+	 * @param operation	 Enum that is Create Update or Delete as defined by the Operation Static variable 
+	 * 
+	 * @return AssessmentManagerResult that contains the updated assessment and updated vulnerabilities.
 	 */
-	public AssessmentManagerResult assessmentChange(Assessment asmt, List<Vulnerability> vulns, Operation Operation);
+	public AssessmentManagerResult assessmentChange(Assessment assessment, List<Vulnerability> vulns, Operation operation);
 	
 
 

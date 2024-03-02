@@ -9,7 +9,9 @@ import com.faction.elements.User;
 import com.faction.elements.Assessment;
 import com.faction.elements.CustomField;
 
-
+/**
+ * Class to represent a Faction verification/retest event
+ */
 public class Verification {
 	
 	private Long id;
