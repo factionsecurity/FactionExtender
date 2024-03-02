@@ -15,7 +15,7 @@ public interface AssessmentManager extends BaseInterface{
 	 * Operation This is a static list of events that can be used to control what happens when the event fires.
 	 */
 	static public enum Operation { Create, Update, Delete, 
-		Finalize, ReportCreate, PeerReviewCreated, PeerReviewCompleted,
+		Finalize, PeerReviewCreated, PeerReviewCompleted,
 		PeerReviewAccepted};
 		
 	
