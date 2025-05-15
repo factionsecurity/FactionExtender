@@ -8,9 +8,12 @@ import java.util.UUID;
 
 import com.faction.elements.User;
 
+import lombok.Data;
+
 /**
  * The Assessment Class is used to store all elements of a Faction Assessment
  */
+@Data
 public class Assessment {
 
 	private String summary;
@@ -34,175 +37,6 @@ public class Assessment {
 	private String status;
 	private Integer workflow;
 	private List<CustomField> customFields;
-
-	public String getSummary() {
-		return summary;
-	}
-
-	public String getRiskAnalysis() {
-
-		return this.riskAnalysis;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getAppId() {
-		return appId;
-	}
-
-	public void setAppId(String appId) {
-		this.appId = appId;
-	}
-
-	public Date getStart() {
-		return start;
-	}
-
-	public void setStart(Date start) {
-		this.start = start;
-	}
-
-	public Date getEnd() {
-		return end;
-	}
-
-	public void setEnd(Date end) {
-		this.end = end;
-	}
-
-	public Date getCompleted() {
-		return completed;
-	}
-
-	public void setCompleted(Date completed) {
-		this.completed = completed;
-	}
-
-	public String getNotes() {
-		return Notes;
-	}
-
-	public String getDistributionList() {
-		return DistributionList;
-	}
-
-	public void setDistributionList(String distributionList) {
-		DistributionList = distributionList;
-	}
-
-	public String getAccessNotes() {
-		return AccessNotes;
-	}
-
-	public String getPr_sum_notes() {
-		return pr_sum_notes;
-	}
-
-	public String getPr_risk_notes() {
-		return pr_risk_notes;
-	}
-
-	public String getType() {
-		return type;
-	}
-
-	public byte[] getFinalReport() {
-		return finalReport;
-	}
-
-	public String getCampaign() {
-		return campaign;
-	}
-
-	public User getEngagementContact() {
-		return engagementContact;
-	}
-
-	public User getRemediationContact() {
-		return remediationContact;
-	}
-
-	public void setEngagementContact(User engagementContact) {
-		this.engagementContact = engagementContact;
-	}
-
-	public void setRemediationContact(User remediationContact) {
-		this.remediationContact = remediationContact;
-	}
-
-	public List<User> getAssessors() {
-		return assessors;
-	}
-
-	public void setAssessors(List<User> assessors) {
-		this.assessors = assessors;
-	}
-
-	public String getStatus() {
-		return status;
-	}
-
-	public Integer getWorkflow() {
-		return workflow;
-	}
-
-	public void setSummary(String summary) {
-		this.summary = summary;
-	}
-
-	public void setRiskAnalysis(String riskAnalysis) {
-		this.riskAnalysis = riskAnalysis;
-	}
-
-	public void setNotes(String notes) {
-		Notes = notes;
-	}
-
-	public void setAccessNotes(String accessNotes) {
-		AccessNotes = accessNotes;
-	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
-
-	public void setFinalReport(byte[] finalReport) {
-		this.finalReport = finalReport;
-	}
-
-	public void setCampaign(String campaign) {
-		this.campaign = campaign;
-	}
-
-	public void setPr_sum_notes(String pr_sum_notes) {
-		this.pr_sum_notes = pr_sum_notes;
-	}
-
-	public void setPr_risk_notes(String pr_risk_notes) {
-		this.pr_risk_notes = pr_risk_notes;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
-	}
-
-	public void setWorkflow(Integer workflow) {
-		this.workflow = workflow;
-	}
-
-	public void setCustomFields(List<CustomField> fields) {
-		this.customFields = fields;
-	}
-
-	public List<CustomField> getCustomFields() {
-		return this.customFields;
-	}
-
+	private List<CheckList> checklists;
 	
 }
