@@ -14,6 +14,7 @@ import lombok.Data;
 /**
  * The Assessment Class is used to store all elements of a Faction Assessment
  */
+@Data
 public class Assessment {
 
 	private String summary;
