@@ -8,12 +8,12 @@ import java.util.UUID;
 
 import com.faction.elements.User;
 
+
 import lombok.Data;
 
 /**
  * The Assessment Class is used to store all elements of a Faction Assessment
  */
-@Data
 public class Assessment {
 
 	private String summary;
@@ -38,5 +38,6 @@ public class Assessment {
 	private Integer workflow;
 	private List<CustomField> customFields;
 	private List<CheckList> checklists;
+
 	
 }
