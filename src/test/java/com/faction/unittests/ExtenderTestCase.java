@@ -15,6 +15,8 @@ import org.junit.jupiter.api.Test;
 
 import com.faction.elements.Assessment;
 import com.faction.elements.BaseExtension;
+import com.faction.elements.CheckList;
+import com.faction.elements.CheckListItem;
 import com.faction.elements.Vulnerability;
 import com.faction.elements.results.AssessmentManagerResult;
 import com.faction.elements.utils.Log;
@@ -42,15 +44,37 @@ public class ExtenderTestCase {
 		List<Vulnerability> vulns = new ArrayList<>();
 		vulns.add(vuln);
 		
+		CheckList checklist = new CheckList();
+		CheckListItem item1 = new CheckListItem();
+		item1.setNotes("note1");
+		item1.setQuestion("question1");
+		item1.setAnswer(CheckListItem.Answer.Fail);
+		CheckListItem item2 = new CheckListItem();
+		item2.setNotes("note2");
+		item2.setQuestion("question2");
+		item2.setAnswer(CheckListItem.Answer.Pass);
+		
+		checklist.setName("checklist1");
+		checklist.setCheckListItems(new ArrayList<>());
+		checklist.getCheckListItems().add(item1);
+		checklist.getCheckListItems().add(item2);
+		
+		asmt.setChecklists(new ArrayList<>());
+		asmt.getChecklists().add(checklist);
+		
+		
+		
+		
 		AssessmentManagerResult result = asmtMgr.assessmentChange(asmt, vulns, Operation.Create);
 		
 		assertTrue(result.getAssessment().getSummary().equals("This is a test"));
 		
-		assertTrue(asmtMgr.getLogs().size() == 2);
+		assertTrue(asmtMgr.getLogs().size() == 3);
 		
 		List<Log> logs = asmtMgr.getLogs();
 		assertTrue(logs.stream().anyMatch( log -> log.getMessage().equals("Got Config1: Test Config 1")));
 		assertTrue(logs.stream().anyMatch( log -> log.getMessage().equals("Got Config2: Test Config 2")));
+		assertTrue(logs.stream().anyMatch( log -> log.getMessage().equals("Got Checklist: checklist1")));
 		
 		
 		
@@ -70,6 +94,8 @@ public class ExtenderTestCase {
 			
 			this.getLogger().addLog(LEVEL.INFO, "Got Config1: " + config1);
 			this.getLogger().addLog(LEVEL.INFO, "Got Config2: " + config2);
+			
+			this.getLogger().addLog(LEVEL.INFO, "Got Checklist: " + asmt.getChecklists().get(0).getName());
 			
 			AssessmentManagerResult result = new AssessmentManagerResult();
 			result.setAssessment(asmt);
